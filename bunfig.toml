@@ -1,0 +1,3 @@
+# `bun test` is Bun's own test runner, not this project's Vitest setup. Fail fast instead.
+[test]
+preload = ["./scripts/bun-test-guard.ts"]
