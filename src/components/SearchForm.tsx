@@ -15,6 +15,7 @@ type Props = {
 };
 
 const CONTROL = "border border-gray-400 rounded px-2 py-1";
+const FIELD_CLASSNAME = "col-span-2 grid grid-cols-subgrid items-center";
 
 export function SearchForm({ onSubmit, pending }: Props) {
   function handleSubmit(event: SubmitEvent<HTMLFormElement>) {
@@ -23,18 +24,18 @@ export function SearchForm({ onSubmit, pending }: Props) {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col gap-2 max-w-md">
-      <div className="flex items-center gap-2">
+    <form onSubmit={handleSubmit} className="grid grid-cols-[auto_1fr] gap-x-3 gap-y-2 max-w-md">
+      <div className={FIELD_CLASSNAME}>
         <label htmlFor={FORM_FIELDS.searchText}>Search</label>
         <input
           type="text"
           id={FORM_FIELDS.searchText}
           name={FORM_FIELDS.searchText}
-          placeholder="Name, NORAD ID, COSPAR ID, operator…"
+          placeholder="Name, NORAD ID, etc..."
           className={CONTROL}
         />
       </div>
-      <div className="flex items-center gap-2">
+      <div className={FIELD_CLASSNAME}>
         <label htmlFor={FORM_FIELDS.howMany}>Max results</label>
         <input
           type="text"
@@ -44,7 +45,7 @@ export function SearchForm({ onSubmit, pending }: Props) {
           className={CONTROL}
         />
       </div>
-      <div className="flex items-center gap-2">
+      <div className={FIELD_CLASSNAME}>
         <label htmlFor={FORM_FIELDS.nation}>Country</label>
         <select
           id={FORM_FIELDS.nation}
@@ -60,7 +61,7 @@ export function SearchForm({ onSubmit, pending }: Props) {
           ))}
         </select>
       </div>
-      <div className="flex items-center gap-2">
+      <div className={FIELD_CLASSNAME}>
         <label htmlFor={FORM_FIELDS.orbitRegime}>Orbit</label>
         <select
           id={FORM_FIELDS.orbitRegime}
@@ -76,7 +77,7 @@ export function SearchForm({ onSubmit, pending }: Props) {
           ))}
         </select>
       </div>
-      <div className="flex items-center gap-2">
+      <div className={FIELD_CLASSNAME}>
         <label htmlFor={FORM_FIELDS.missionStatus}>Status (required)</label>
         <select
           id={FORM_FIELDS.missionStatus}
@@ -95,7 +96,7 @@ export function SearchForm({ onSubmit, pending }: Props) {
       <button
         type="submit"
         disabled={pending}
-        className="self-start border border-gray-500 rounded px-3 py-1 bg-gray-100 disabled:opacity-50"
+				className="button-primary col-span-2 justify-self-center w-2/3 px-4 py-2 disabled:opacity-50"
       >
         {pending ? "Searching…" : "Search"}
       </button>
