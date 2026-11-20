@@ -1,4 +1,4 @@
-# Orbital Wiki take-home (TypeScript)
+# Tredy Candidate Coding Assessment (TypeScript)
 
 ![Rogue Goose](https://github.com/user-attachments/assets/4f1da58b-bd97-43a3-b2e8-c418b814b77b)
 
@@ -11,7 +11,7 @@ There are two parts:
 
 Expect this to take about **2 hours**. If you're going well past that, stop and write down where you got to and what you'd do next. That's a perfectly fine submission.
 
-There's also a Go track (an MCP server around the same API). Do whichever you prefer, or both if you like.
+There's also a [Go track](https://github.com/tredy-ai/rogue-goose-ts) (an MCP server around the same API). Do whichever you prefer, or both if you like.
 
 ---
 
