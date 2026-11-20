@@ -1,14 +1,14 @@
 @import "tailwindcss";
 
 @layer components {
-	.button-primary {
-		@apply bg-indigo-500;
+  .button-primary {
+    @apply bg-indigo-500;
     @apply hover:bg-indigo-600;
-		@apply text-white;
-		@apply rounded-lg;
-		@apply transition duration-75 ease-out;
+    @apply text-white;
+    @apply rounded-lg;
+    @apply transition duration-75 ease-out;
     @apply enabled:active:scale-95 enabled:active:bg-indigo-700;
-		@apply cursor-pointer;
+    @apply cursor-pointer;
     @apply disabled:cursor-not-allowed;
-	}
+  }
 }

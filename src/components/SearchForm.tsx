@@ -96,7 +96,7 @@ export function SearchForm({ onSubmit, pending }: Props) {
       <button
         type="submit"
         disabled={pending}
-				className="button-primary col-span-2 justify-self-center w-2/3 px-4 py-2 disabled:opacity-50"
+        className="button-primary col-span-2 justify-self-center w-2/3 px-4 py-2 disabled:opacity-50"
       >
         {pending ? "Searching…" : "Search"}
       </button>
