@@ -7,7 +7,7 @@ export function SearchPage() {
   const search = useSearch();
 
   return (
-    <main>
+    <main className="p-4">
       <h1>Satellite search</h1>
       <SearchForm onSubmit={(data) => search.mutate(data)} pending={false /* TODO(Part 1) */} />
 

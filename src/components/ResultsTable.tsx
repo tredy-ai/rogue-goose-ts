@@ -24,11 +24,13 @@ export function ResultsTable({ data, onSelect }: Props) {
       {data.rows.length === 0 ? (
         <p>No results.</p>
       ) : (
-        <table border={1}>
+        <table className="border-collapse">
           <thead>
             <tr>
               {COLUMNS.map((column) => (
-                <th key={column}>{column}</th>
+                <th key={column} className="border border-black">
+                  {column}
+                </th>
               ))}
             </tr>
           </thead>
@@ -36,7 +38,9 @@ export function ResultsTable({ data, onSelect }: Props) {
             {data.rows.map((row) => (
               <tr key={row.noradId} onClick={onSelect ? () => onSelect(row.noradId) : undefined}>
                 {COLUMNS.map((column) => (
-                  <td key={column}>{row[column]}</td>
+                  <td key={column} className="border border-black">
+                    {row[column]}
+                  </td>
                 ))}
               </tr>
             ))}

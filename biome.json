@@ -7,7 +7,7 @@
   },
   "files": {
     "ignoreUnknown": true,
-    "includes": ["**", "!!.next", "!!docs", "!!ai-log", "!README.md"]
+    "includes": ["**", "!!.next", "!!docs", "!!ai-log", "!README.md", "!public"]
   },
   "formatter": {
     "enabled": true,
