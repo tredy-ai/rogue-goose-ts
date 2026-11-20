@@ -1,6 +1,6 @@
 # Tredy Candidate Coding Assessment (TypeScript)
 
-![Rogue Goose](https://github.com/user-attachments/assets/4f1da58b-bd97-43a3-b2e8-c418b814b77b)
+![Rogue Goose](https://github.com/user-attachments/assets/352b5cd5-ab02-473d-b024-3963ab983fd8)
 
 This repo is a small Next.js app for searching satellites with the [Orbital Wiki API](https://www.orbitalwiki.com/developers). The form and most of the UI are already built. Your job is mostly backend work.
 
