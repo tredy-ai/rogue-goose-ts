@@ -1,5 +1,7 @@
 # Orbital Wiki take-home (TypeScript)
 
+![Rogue Goose](https://github.com/user-attachments/assets/4f1da58b-bd97-43a3-b2e8-c418b814b77b)
+
 This repo is a small Next.js app for searching satellites with the [Orbital Wiki API](https://www.orbitalwiki.com/developers). The form and most of the UI are already built. Your job is mostly backend work.
 
 There are two parts:
